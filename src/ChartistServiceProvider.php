@@ -11,7 +11,9 @@
 
 namespace BrianFaust\Chartist;
 
-class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
+use BrianFaust\ServiceProvider\ServiceProvider;
+
+class ChartistServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -19,6 +21,7 @@ class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
     public function boot()
     {
         $this->publishViews();
+
         $this->loadViews();
     }
 
