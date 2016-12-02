@@ -22,24 +22,24 @@ class Builder
      * @var array
      */
     private $defaults = [
-        'aspectRatio' => null,
-        'dimension' => ['width' => 'auto', 'height' => 'auto'],
-        'element' => null,
-        'labels' => [],
-        'options' => [],
-        'prefix' => 'ct-',
+        'aspectRatio'       => null,
+        'dimension'         => ['width' => 'auto', 'height' => 'auto'],
+        'element'           => null,
+        'labels'            => [],
+        'options'           => [],
+        'prefix'            => 'ct-',
         'responsiveOptions' => [],
-        'series' => [],
-        'type' => 'Line',
+        'series'            => [],
+        'type'              => 'Line',
     ];
 
     /**
      * @var array
      */
     private $types = [
-        'Bar' => 'extended',
+        'Bar'  => 'extended',
         'Line' => 'extended',
-        'Pie' => 'minimal',
+        'Pie'  => 'minimal',
     ];
 
     /**
@@ -112,7 +112,7 @@ class Builder
      */
     public function type($type)
     {
-        if (! array_key_exists($type, $this->types)) {
+        if (!array_key_exists($type, $this->types)) {
             throw new \InvalidArgumentException('Invalid Chart type.');
         }
 
