@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Tests\Chartist;
 
-use GrahamCampbell\TestBench\AbstractPackageTestCase;
 use BrianFaust\Chartist\ServiceProvider;
+use GrahamCampbell\TestBench\AbstractPackageTestCase;
 
 abstract class AbstractTestCase extends AbstractPackageTestCase
 {
