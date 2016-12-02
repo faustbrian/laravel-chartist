@@ -11,20 +11,13 @@ $ composer require faustbrian/laravel-chartist
 Add the service provider to `config/app.php` in the `providers` array.
 
 ``` php
-'providers' => [
-    // ... Illuminate Providers
-    // ... App Providers
-    BrianFaust\Chartist\ServiceProvider::class
-];
+BrianFaust\Chartist\ServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
 
 ``` php
-'aliases' => [
-    // ... Illuminate Facades
-    'Chartist' => BrianFaust\Chartist\Facades\Chartist::class
-];
+'Chartist' => BrianFaust\Chartist\Facades\Chartist
 ```
 
 ## Usage
