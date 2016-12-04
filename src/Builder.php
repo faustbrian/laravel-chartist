@@ -22,6 +22,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Chartist;
 
+use Illuminate\View\View;
+
 class Builder
 {
     /**
