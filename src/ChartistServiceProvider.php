@@ -22,9 +22,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\Chartist;
 
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 
-class ChartistServiceProvider extends ServiceProvider
+class ChartistServiceProvider extends AbstractServiceProvider
 {
     /**
      * Bootstrap the application services.
