@@ -10,18 +10,6 @@ Require this package, with [Composer](https://getcomposer.org/), in the root dir
 $ composer require faustbrian/laravel-chartist
 ```
 
-Add the service provider to `config/app.php` in the `providers` array.
-
-``` php
-BrianFaust\Chartist\ServiceProvider::class
-```
-
-If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
-
-``` php
-'Chartist' => BrianFaust\Chartist\Facades\Chartist
-```
-
 ## Usage
 
 ``` php
@@ -92,19 +80,11 @@ public function index()
 {!! Chartist::renderScripts('areaChart') !!}
 ```
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
 ## Testing
 
 ``` bash
 $ phpunit
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 

@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Chartist.
  *
@@ -14,7 +11,6 @@ declare(strict_types=1);
 
 namespace BrianFaust\Tests\Chartist;
 
-use BrianFaust\Chartist\ServiceProvider;
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
 
 abstract class AbstractTestCase extends AbstractPackageTestCase
@@ -28,6 +24,6 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app): string
     {
-        return ServiceProvider::class;
+        return \BrianFaust\Chartist\ChartistServiceProvider::class;
     }
 }
