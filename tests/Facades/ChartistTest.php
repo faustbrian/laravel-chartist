@@ -15,8 +15,8 @@ namespace BrianFaust\Tests\Chartist\Facades;
 
 use BrianFaust\Chartist\Builder;
 use BrianFaust\Chartist\Facades\Chartist;
-use GrahamCampbell\TestBenchCore\FacadeTrait;
 use BrianFaust\Tests\Chartist\AbstractTestCase;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class ChartistTest extends AbstractTestCase
 {
