@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-chartist",
+    "name": "artisanry/chartist",
     "description": "Chartist Integration with a Fluent Builder for Laravel 5",
-    "keywords": ["laravel", "framework", "Laravel-Chartist", "Laravel Chartist", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Chartist", "Laravel Chartist"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Chartist\\": "src/"
+            "Artisanry\\Chartist\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Chartist\\": "tests"
+            "Artisanry\\Tests\\Chartist\\": "tests"
         }
     },
     "config": {
@@ -37,10 +37,10 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Chartist\\ChartistServiceProvider"
+                "Artisanry\\Chartist\\ChartistServiceProvider"
             ],
             "aliases": {
-                "Chartist": "BrianFaust\\Chartist\\Facades\\Chartist"
+                "Chartist": "Artisanry\\Chartist\\Facades\\Chartist"
             }
         }
     },
