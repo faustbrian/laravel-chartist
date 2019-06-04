@@ -23,10 +23,10 @@ class ChartistServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/laravel-chartist'),
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/chartist'),
         ], 'views');
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-chartist');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'chartist');
     }
 
     /**
